@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar Hati</title>
+    <style>
+        body {
+            background-color: red; /* Latar belakang merah */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Tinggi penuh viewport */
+            margin: 0; /* Menghilangkan margin default */
+        }
+        .heart {
+            position: relative;
+            width: 100px; /* Lebar hati */
+            height: 100px; /* Tinggi hati */
+            background-color: pink; /* Warna hati */
+            transform: rotate(-45deg); /* Memutar hati */
+            margin: 0;
+        }
+        .heart:before,
+        .heart:after {
+            content: '';
+            position: absolute;
+            width: 100px; /* Lebar bagian atas hati */
+            height: 100px; /* Tinggi bagian atas hati */
+            background-color: pink; /* Warna bagian atas hati */
+            border-radius: 50%; /* Membuat bagian atas hati bulat */
+        }
+        .heart:before {
+            top: -50px; /* Posisi bagian atas kiri */
+            left: 0;
+        }
+        .heart:after {
+            left: 50px; /* Posisi bagian atas kanan */
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="heart"></div> <!-- Membuat elemen hati -->
+
+</body>
+</html>
